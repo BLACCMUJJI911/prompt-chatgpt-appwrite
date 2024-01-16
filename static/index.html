@@ -19,7 +19,7 @@
         const json = await response.json();
 
         if (!json.ok || json.error) {
-          alert(json.error);
+          alert("LOG",json.error);
         }
 
         return json.completion;
